@@ -217,6 +217,7 @@ input, select, textarea {
 			background-attachment: fixed;
 			background-color: #e1e6e1;
 			/* background-image: url("../../images/overlay.png"), url("../../images/background1.png"); */
+			/* background-image: url("../../images/overlay.png"), url("../../images/back.svg"); */
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
 		}
@@ -894,6 +895,16 @@ input, select, textarea {
 		.image.filtered.tinted:after {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
 			background-size: 128px 128px, auto, auto;
+		}
+
+		.image.adjusted {
+			max-width: 20%;
+			max-height: 20%;
+			position: absolute;
+			top: 80px;
+			right: 0;
+			/* width: 200px; */
+			/* height: 100px; */
 		}
 
 		.image[data-position] img {
@@ -2198,6 +2209,13 @@ input, select, textarea {
 				/* background-image: url("../../images/background1.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4); */
 				background-color: #343131;
 				background-size: 128px 128px, auto;
+			}
+
+			.panel > *.colorimg {
+				/* background-image: url("../../images/vis5.jpeg"); */
+				background-image: url("../../images/vis6.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				/* background-color: #343131; */
+				background-size: 190%, 190%, auto;
 			}
 
 			.panel > *.color1 {
